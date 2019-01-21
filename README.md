@@ -1,3 +1,9 @@
+### Installation
+
+```
+pip install panasonic-concat
+```
+
 ### Description
 
 Util concats `*.MTS` files and improves an audio loudness. It's a typical pipeline done with video files on panasonic video-camera (like HC v770). Equivalent ffmpeg commands:
@@ -47,3 +53,4 @@ The output file name can be omitted, so the record's time (or the current time) 
 ### Dev notes
 
 - [How to distribute the package to pip](https://packaging.python.org/tutorials/packaging-projects/)
+- [Command line scripts](https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html)
