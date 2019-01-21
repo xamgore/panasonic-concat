@@ -16,7 +16,7 @@ ffmpeg-normalize -v res.mp4 -c:a aac -b:a 384k -lrt 20 -tp 0 -o res.mp4
 ### Help
 
 ```
-usage: convert.py [-h] [-n] [-o FILE] path [path ...]
+usage: panasonic-concat [-h] [-n] [-o FILE] path [path ...]
 
 Convert a bunch of MTS files to a video with a normalized sound.
 
@@ -35,19 +35,13 @@ Pay attention, the current directory is used as a temprorary (so it's better to 
 
 ```bash
 cd ~
-convert.py /sdcard/STREAM/{5,6,7,8}.MTS -o lecture.mp4
-```
-
-Relative paths are handled:
-
-```bash
-convert.py ~/video/5.MTS ../../6.MTS --normalize -o res.mp4
+panasonic-concat /sdcard/STREAM/{5,6,7,8}.MTS -o lecture.mp4
 ```
 
 The output file name can be omitted, so the record's time (or the current time) like `2018-06-03__13-16-20.mp4` will be used:
 
 ```bash
-./convert.py ~/video/5.MTS ../../6.MTS --normalize
+panasonic-concat /sdcard/STREAM/5.MTS ../../6.MTS --normalize
 ```
 
 ### Dev notes
