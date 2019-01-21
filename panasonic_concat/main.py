@@ -23,9 +23,9 @@ def get_default_name(path_to_mts_file):
 
 
 parser = argparse.ArgumentParser(description='Convert a bunch of MTS files to a video with a normalized sound.')
-parser.add_argument('path', nargs='+', type=argparse.FileType('r'), help='path to MTS file(s)')
-parser.add_argument('-n', '--normalize', action='store_true', help='do audio normalization')
-parser.add_argument('-o', nargs='?', metavar='FILE', help='output file name, record date by default')
+parser.add_argument('path', nargs='+', type=argparse.FileType('r'), help='path to the MTS file(s)')
+parser.add_argument('-n', '--normalize', action='store_true', help='do the audio normalization')
+parser.add_argument('-o', nargs='?', metavar='FILE', help='the output file name, (record\'s date used by default)')
 
 args = parser.parse_args()
 
