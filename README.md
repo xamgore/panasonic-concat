@@ -1,7 +1,7 @@
 ### Installation
 
 ```
-pip install panasonic-concat
+sudo pip install panasonic-concat
 ```
 
 ### Description
