@@ -6,7 +6,7 @@ sudo pip install panasonic-concat
 
 ### Description
 
-Util concats `*.MTS` files and improves an audio loudness. It's a typical pipeline done with video files on panasonic video-camera (like HC v770). Equivalent ffmpeg commands:
+Util concats `*.MTS` files and improves an audio loudness. It's a typical pipeline done with video files on a panasonic video-cameras (like HC v770). Equivalent ffmpeg commands:
 
 ```bash
 ffmpeg -i 'concat:0.MTS|1.MTS|2.MTS' -vcodec copy -acodec copy res.mp4
